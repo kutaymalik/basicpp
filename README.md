@@ -33,7 +33,7 @@ BasicApp'in kullanıcı arayüzü, React ve Tailwind CSS ile geliştirilmiştir.
 Projeyi geliştirme modunda başlatmak için:
 ```bash
 npm start
-
+```
 ### NOT
 Backend port'u ayağa kaldırıldığı zaman farklı olursa asicpp\src\services\api.js'teki adresi değiştiriniz.
 (.env küçük bir proje olduğu için kullanılmadı.)
