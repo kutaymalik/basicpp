@@ -1,8 +1,3 @@
-### Frontend README
-
-**`/BasicAppUI/README.md`**
-
-```markdown
 # BasicApp Frontend
 
 BasicApp'in kullanıcı arayüzü, React ve Tailwind CSS ile geliştirilmiştir. Kullanıcıların kayıt olması, giriş yapması, profil bilgilerini görüntülemesi, güncellemesi ve hesabını silmesi gibi işlevleri içerir.
