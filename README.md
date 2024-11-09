@@ -14,7 +14,7 @@ BasicApp'in kullanıcı arayüzü, React ve Tailwind CSS ile geliştirilmiştir.
 
 1. Proje dosyasını bilgisayarınıza klonlayın:
     ```bash
-    git clone https://github.com/username/BasicAppUI.git
+    gh repo clone kutaymalik/basicpp
     ```
 
 2. Proje dizinine gidin ve bağımlılıkları yükleyin:
