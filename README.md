@@ -1,6 +1,3 @@
-
----
-
 ### Frontend README
 
 **`/BasicAppUI/README.md`**
