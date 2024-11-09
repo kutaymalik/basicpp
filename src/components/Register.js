@@ -1,10 +1,11 @@
+// src/components/Register.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { register } from "../services/authService";
+import { toast } from "react-toastify";
 
 function Register() {
     const [userData, setUserData] = useState({ UserName: "", Email: "", Password: "" });
-    const [message, setMessage] = useState("");
     const navigate = useNavigate();
 
     const handleChange = (e) => {
@@ -16,13 +17,15 @@ function Register() {
         e.preventDefault();
         try {
             const response = await register(userData);
-            setMessage(response.Message);
             if (response.isSuccessful) {
+                toast.success("Registration successful!");
                 navigate("/login");
+            } else {
+                toast.error(response.Message || "Registration failed!");
             }
         } catch (error) {
             console.error(error);
-            setMessage("Registration failed!");
+            toast.error("Registration failed!");
         }
     };
 
@@ -78,7 +81,6 @@ function Register() {
                 >
                     Register
                 </button>
-                <p className="mt-4 text-center text-red-500">{message}</p>
 
                 <div className="mt-4 text-center">
                     <p className="text-gray-600">Already have an account?</p>
