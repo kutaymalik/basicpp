@@ -35,5 +35,5 @@ Projeyi geliştirme modunda başlatmak için:
 npm start
 ```
 ### NOT
-Backend port'u ayağa kaldırıldığı zaman farklı olursa asicpp\src\services\api.js'teki adresi değiştiriniz.
+Backend port'u ayağa kaldırıldığı zaman farklı olursa basicpp\src\services\api.js'teki adresi değiştiriniz.
 (.env küçük bir proje olduğu için kullanılmadı.)
