@@ -23,7 +23,7 @@ BasicApp'in kullanıcı arayüzü, React ve Tailwind CSS ile geliştirilmiştir.
     npm install
     ```
 
-3. Backend API'si ile entegrasyon için `.env` dosyası oluşturun ve API adresini belirtin:
+3. Backend API'si ile entegrasyon için `.env` dosyasında backend hangi portta ayağa kalkarsa REACT_APP_API_URL değişkeninin aşağıdaki gibi sadece portunu değiştiriniz.
     ```plaintext
     REACT_APP_API_URL=https://localhost:7262/BasicApp/api/v1
     ```
@@ -34,6 +34,3 @@ Projeyi geliştirme modunda başlatmak için:
 ```bash
 npm start
 ```
-### NOT
-Backend port'u ayağa kaldırıldığı zaman farklı olursa basicpp\src\services\api.js'teki adresi değiştiriniz.
-(.env küçük bir proje olduğu için kullanılmadı.)
